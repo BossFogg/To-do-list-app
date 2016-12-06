@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="css/todolist.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<script type="text/javascript" src="js/lib/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<div class="header-input">
+			<h1>Your To Do List</h1>
+			<span class="desc-expand">expand</span>
+			<input type="text" class="master-input" name="todo" placeholder="What do you need to do?">	
+		</div>
+		<div class="extra-input hidden">
+			<input type="text" class="master-input" name="desc" placeholder="Add more details?">
+			<span class="save">Add to-do item</span>
+			<span class="clear">Clear all completed</span>
+		</div>
+		<ul>
+			<li>
+				<div class="content">
+					<h2 class="title">Add a To Do list Item</h2>
+					<hr>
+					<p class="desc">Type something in the form and press Enter</p>
+				</div>
+				<div class="editor hidden">
+					<input type="text" class="edit-input" name="todo-edit">
+					<hr>
+					<input type="text" class="edit-input" name="desc-edit">
+				</div>
+				<div class="controls">
+					<span class="delete-btn">(X)</span>
+					<span class="edit-btn">(edit)</span>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h2 class="title">Mark an item complete</h2>
+					<hr>
+					<p class="desc">Click on the text to cross an item off your list</p>
+				</div>
+				<div class="editor hidden">
+					<input type="text" class="edit-input" name="todo-edit">
+					<hr>
+					<input type="text" class="edit-input" name="desc-edit">
+				</div>
+				<div class="controls">
+					<span class="delete-btn">(X)</span>
+					<span class="edit-btn">(edit)</span>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h2 class = title>Delete an Item</h2>
+					<hr>
+					<p class="desc">Use the "(X)" on the right side of the item</p>
+				</div>
+				<div class="editor hidden">
+					<input type="text" class="edit-input" name="todo-edit">
+					<hr>
+					<input type="text" class="edit-input" name="desc-edit">
+				</div>
+				<div class="controls">
+					<span class="delete-btn">(X)</span>
+					<span class="edit-btn">(edit)</span>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h2 class = title>Edit an Item</h2>
+					<hr>
+					<p class="desc">Click "edit" to change the contents of an item</p>
+				</div>
+				<div class="editor hidden">
+					<input type="text" class="edit-input" name="todo-edit">
+					<hr>
+					<input type="text" class="edit-input" name="desc-edit">
+				</div>
+				<div class="controls">
+					<span class="delete-btn">(X)</span>
+					<span class="edit-btn">(edit)</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+<script type="text/javascript" src="js/todolist.js"></script>
+</body>
+</html>
